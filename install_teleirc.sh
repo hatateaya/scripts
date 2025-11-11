@@ -1,3 +1,5 @@
+set -e
+
 VER=2.3.0
 echo "Selecting TeleIRC version ${VER}..."
 
@@ -22,6 +24,8 @@ sudo install -Dm644 -o root -g root ~/teleirc@.service /etc/systemd/system/telei
 sudo systemd-sysusers /etc/sysusers.d/teleirc.conf
 sudo systemd-tmpfiles --create /etc/tmpfiles.d/teleirc.conf
 sudo install -Dm644 -o root -g root ~/teleirc.env /etc/teleirc/bridge
+
+echo "Cleaning up temporary files..."
 rm ~/teleirc ~/teleirc.sysusers ~/teleirc.tmpfiles ~/teleirc@.service ~/teleirc.env
 
 echo "Starting and enabling TeleIRC..."
