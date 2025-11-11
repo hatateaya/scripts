@@ -13,6 +13,7 @@ curl --location --output ~/teleirc.env https://raw.githubusercontent.com/RITlug/
 echo "Please edit the TeleIRC environment file to configure your bridge settings..."
 vim ~/teleirc.env
 echo "Please make sure you configured TeleIRC correctly in ~/teleirc.env before proceeding!"
+echo "Press any key to continue..."
 read nothing
 
 echo "Installing TeleIRC files and user..."
