@@ -2,9 +2,9 @@
 
 ## install_teleirc.sh
 
-Install TeleIRC, a bridge between IRC and Telegram as a systemd service and set it up, enabling it and start it immediately.
+Install TeleIRC, a bridge between IRC and Telegram as a systemd service and set it up.
 
-`wget https://raw.githubusercontent.com/hatateaya/scripts/refs/heads/main/install_teleirc.sh -O install_teleirc.sh && chmod +x install_teleirc.sh && ./install_teleirc.sh && rm install_teleirc.sh`
+`curl --proto '=https' --tlsv1.2 -sSf https://raw.githubusercontent.com/hatateaya/scripts/refs/heads/main/install_teleirc.sh | bash`
 
 ## mkluksedsqfs.sh
 
