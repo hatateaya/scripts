@@ -23,3 +23,7 @@ This is a /etc/systemd/logind.conf.d/local.conf file that disables automatic sus
 This is a ~/.fonts.conf file that specifies Noto Sans CJK SC as the fallback of Times New Roman / Cantarell / Monospace font.
 
 `wget https://raw.githubusercontent.com/hatateaya/scripts/refs/heads/main/.fonts.conf -O ~/.fonts.conf`
+
+To get it works for all flatpak applications, use:
+
+`flatpak override --user --filesystem=~/.fonts.conf:ro`
