@@ -10,7 +10,7 @@ Install TeleIRC, a bridge between IRC and Telegram as a systemd service and set 
 
 Make an LUKS2 encrypted SquashFS image file from the directory you provide. You can set suffix of the image file as iso then you can click it to input passphase and mount it in most Linux desktop environments.
 
-`wget https://raw.githubusercontent.com/hatateaya/scripts/refs/heads/main/mkluksedsqfs.sh -O mkluksedsqfs.sh && chmod +x mkluksedsqfs.sh && ./mkluksedsqfs.sh && rm mkluksedsqfs.sh`
+`curl --proto '=https' --tlsv1.2 -sSf https://raw.githubusercontent.com/hatateaya/scripts/refs/heads/main/make_luks_squashfs.sh | bash`
 
 ## local.conf
 
