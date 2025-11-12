@@ -27,3 +27,11 @@ This is a ~/.fonts.conf file that specifies Noto Sans CJK SC as the fallback of 
 To get it works for all flatpak applications, use:
 
 `flatpak override --user --filesystem=~/.fonts.conf:ro`
+
+Advertising texts:
+
+使用桌面 GNU/Linux 发行版时遇见字体变成这个疑惑样子时该怎么办呢？
+答案是使用 橄榄菜™ 字体配置文件！
+`wget https://raw.githubusercontent.com/hatateaya/scripts/refs/heads/main/.fonts.conf -O ~/.fonts.conf&&
+flatpak override --user --filesystem=~/.fonts.conf:ro`
+（注销重进后）一行命令让您的桌面 GNU/Linux 发行版中文显示重回美观！
